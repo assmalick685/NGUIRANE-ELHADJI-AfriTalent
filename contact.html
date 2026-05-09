@@ -3,20 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent — Accueil</title>
-    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <title>AfriTalent — contact</title>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet">
-    <!-- Votre feuille de style personnelle -->
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Le contenu de la page sera ajoute ici -->
-    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+            <!-- LOGO -->
+                <a class="navbar-brand" href="#">AfriTalent</a>
+
+            <!-- BOUTON MOBILE -->
+                 <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+            <!-- MENU -->
+                 <div class="collapse navbar-collapse">
+
+                <!-- LIENS -->
+                     <ul class="navbar-nav mx-auto">
+                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                <!-- BOUTON CTA -->
+                     <a href="#" class="btn">Rejoindre AfriTalent</a>
+                 </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <main>
+
+        <!-- CONTACT -->
+        <section>
+            <div class="container">
+
+                <h2>Contacter-nous</h2>
+
+                <div class="row">
+
+                    <!-- FORMULAIRE -->
+                     <div class="col-md-6">
+
+                        <form action="">
+
+                            <!-- NOM -->
+                            <div>
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom">
+                                <small></small>
+                            </div>
+
+                             <!-- PRENOM -->
+                            <div>
+                                <label for="prenom">Prénom</label>
+                                <input type="text" id="prenom">
+                                <small></small>
+                            </div>
+
+                            <!-- EMAIL -->
+                              <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email">
+                                <small></small>
+                             </div>
+
+                             <!-- SUJET -->
+                              <div>
+                                <label for="sujet">Sujet</label>
+
+                                <select name="" id="sujet">
+                                    <option value="">Choisir un sujet</option>
+                                    <option value="">Support</option>
+                                    <option value="">Recrutement</option>
+                                    <option value="">Partenariat</option>
+                                </select>
+
+                                <small></small>
+                              </div>
+
+                              <!-- MESSAGE -->
+                               <div>
+                                    <label for="message">Message</label>
+                                    <textarea name="" id="message" rows="5"></textarea>
+                                    <small></small>
+                               </div>
+
+                               <!-- BUTTON -->
+                                <button type="submit" class="btn">Envoyer</button>
+                        </form>
+                     </div>
+
+                     <!-- INFOS -->
+                    <div class="col-md-6">
+
+                        <h2>Informations</h2>
+
+                        <p><i class="bi bi-envelope"></i>contactafritalent@gmail.com</p>
+
+                        <p><i class="bi bi-telephone"></i>77 378 29 93</p>
+
+                        <p><i class="bi bi-geo-alt"></i>Dakr, Sénégal</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOOGLE MAPS -->
+         <div class="container">
+
+            <h2>Notre localisation</h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.7703187105767!2d-17.434579025865975!3d14.668971885825513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173d47e376b4f%3A0x6db502bc314536e3!2sPlace%20de%20l&#39;Ind%C3%A9pendance!5e0!3m2!1sfr!2ssn!4v1778301648083!5m2!1sfr!2ssn"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+    </main>
+     <footer>
+        <div class="container">
+            &copy; 2026 AfriTalent. Tous droits reserves.
+        </div>
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
     </script>
-    <!-- Votre script JavaScript -->
+    
     <script src="js/main.js"></script>
 </body>
 </html>

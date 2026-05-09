@@ -3,20 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent — Accueil</title>
-    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <title>AfriTalent — freelances</title>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet">
-    <!-- Votre feuille de style personnelle -->
+     <link 
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Le contenu de la page sera ajoute ici -->
-    <!-- Bootstrap 5 via CDN : script JavaScript -->
+      <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+            <!-- LOGO -->
+                <a class="navbar-brand" href="#">AfriTalent</a>
+
+            <!-- BOUTON MOBILE -->
+                 <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+            <!-- MENU -->
+                 <div class="collapse navbar-collapse">
+
+                <!-- LIENS -->
+                     <ul class="navbar-nav mx-auto">
+                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                <!-- BOUTON CTA -->
+                     <a href="#" class="btn">Rejoindre AfriTalent</a>
+                 </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- FILTRES -->
+         <section>
+            <div class="container">
+
+                <h2>Ctalogue de freelances</h2>
+
+                <label for="categorie">Filtre par catégorie :</label>
+                <select name="" id="categorie">
+                    <option value="">Toutes</option>
+                    <option value="">Développement Web</option>
+                    <option value="">Design</option>
+                    <option value="">Marketing</option>
+                </select>
+
+            </div>
+         </section>
+
+         <!-- PROFILS -->
+          <section>
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- 1 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image1.jpg" alt="avatar">
+                        <h5>Jean Pierre Kenedy</h5>
+                        <p>Développeur Web</p>
+                        <p>Creéation de sites web modernes.</p>
+                        <p>20£/h</p>
+                        <p>★★★★★</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 2 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image2.jpg" alt="avatar">
+                        <h5>Ndaye Fatou Fall</h5>
+                        <p>Designer UI/UX</p>
+                        <p>Design d'interfaces intuitives.</p>
+                        <p>18£/h</p>
+                        <p>★★★★☆</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 3 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image3.jpg" alt="avatar">
+                        <h5>Moustapha Sow</h5>
+                        <p>Marketing Digital</p>
+                        <p>Gestion des réseaux sociaux.</p>
+                        <p>15£/h</p>
+                        <p>★★★★☆</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 4 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image4.avif" alt="avatar">
+                        <h5>Cheikh Tidiane Guèye</h5>
+                        <p>Développeur Web</p>
+                        <p>Applications Web performantes.</p>
+                        <p>22£/h</p>
+                        <p>★★★★★</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 5 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image5.avif" alt="avatar">
+                        <h5>Jessica Gradel</h5>
+                        <p>Designer Graphique</p>
+                        <p>Creéation de logos.</p>
+                        <p>17£/h</p>
+                        <p>★★★★☆</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 6 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image5.jpg" alt="avatar">
+                        <h5>Mbayang Sylla</h5>
+                        <p>SEO Experte</p>
+                        <p>Optimisation référencement.</p>
+                        <p>20£/h</p>
+                        <p>★★★★☆</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 7 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image6.jpg" alt="avatar">
+                        <h5>Ababacar Sadikh Diop</h5>
+                        <p>Data Analyst</p>
+                        <p>Analyse de données.</p>
+                        <p>25£/h</p>
+                        <p>★★★★★</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 8 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image7.jpg" alt="avatar">
+                        <h5>Cheikhouna Ndiaye</h5>
+                        <p>DevOps</p>
+                        <p>Gestion des serveurs.</p>
+                        <p>28£/h</p>
+                        <p>★★★★★</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     <!-- 9 -->
+                     <div class="col-md-6 col-lg-4 card">
+                        <img src="image8.avif" alt="avatar">
+                        <h5>Ramatoulaye Sy</h5>
+                        <p>Rédactrice Web</p>
+                        <p>Rédaction d'articles.</p>
+                        <p>15£/h</p>
+                        <p>★★★★☆</p>
+                        <a href="#">Voir le profil</a>
+                     </div>
+
+                     
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <div class="container">
+            &copy; 2026 AfriTalent. Tous droits reserves.
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
     </script>
-    <!-- Votre script JavaScript -->
+  
     <script src="js/main.js"></script>
 </body>
 </html>
