@@ -6,6 +6,11 @@
     <title>AfriTalent — Accueil</title>
     <link rel="stylesheet" href="../BOOTSTRAP/bootstrap5/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -51,9 +56,9 @@
                 <!-- TEXTE -->
                     <div class="col-md-6">
 
-                        <h1>Connecter les talents africains au monde</h1>
+                        <h1 class="hero-title">Connecter les talents africains au monde</h1>
 
-                        <h2>Trouvez des freelances qualifiés ou proposez vos services facilement</h2>
+                        <h2 class="hero-text">Trouvez des freelances qualifiés ou proposez vos services facilement</h2>
 
                         <a href="freelances.html" class="btn">Je suis Freelance</a>
 
@@ -84,17 +89,17 @@
 
             <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-4 stats-box">
                     <h3>+2 500</h3>
                     <p>Freelances</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 stats-box">
                     <h3>+800</h3>
                     <p>Entreprises</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 stats-box">
                     <h3>+12 000</h3>
                     <p>Missions réalisées</p>
                 </div>
@@ -164,44 +169,68 @@
 
                 <!-- 1 -->
                 <div class="col-md-4">
-                    <i class="bi bi-code-slash"></i>
-                        <h5>Développement web</h5>
-                        <p>+1 200 freelances</p>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash"></i>
+                            <h5>Développement web</h5>
+                            <p>+1 200 freelances</p>
+                        </div>
+                    </div>
                 </div>
 
                  <!-- 2 -->
                 <div class="col-md-4">
-                    <i class="bi bi-palette-fill"></i>
-                        <h5>Design UI/UX</h5>
-                        <p>+800 freelances</p>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-palette-fill"></i>
+                            <h5>Design UI/UX</h5>
+                            <p>+800 freelances</p>
+                        </div>
+                    </div>
                 </div>
 
                  <!-- 3 -->
                 <div class="col-md-4">
-                    <i class="bi bi-megaphone-fill"></i>
-                        <h5>Marketing Digital</h5>
-                        <p>+950 freelances</p>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-megaphone-fill"></i>
+                            <h5>Marketing Digital</h5>
+                            <p>+950 freelances</p>
+                        </div>
+                    </div>
                 </div>
 
                  <!-- 4 -->
                 <div class="col-md-4">
-                    <i class="bi bi-cpu-fill"></i>
-                        <h5>DATA & IA</h5>
-                        <p>+600 freelances</p>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-cpu-fill"></i>
+                            <h5>DATA & IA</h5>
+                            <p>+600 freelances</p>
+                        </div>
+                    </div>
                 </div>
 
                  <!-- 5 -->
                 <div class="col-md-4">
-                    <i class="bi bi-pencil-square"></i>
-                        <h5>Rédaction tech</h5>
-                        <p>+700 freelances</p>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-pencil-square"></i>
+                            <h5>Rédaction tech</h5>
+                            <p>+700 freelances</p>
+                        </div>
+                    </div>
                 </div>
 
                  <!-- 6 -->
                 <div class="col-md-4">
-                    <i class="bi bi-cloud-fill"></i>
-                        <h5>DevOps & Cloud</h5>
-                        <p>+500 freelances</p>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-cloud-fill"></i>
+                            <h5>DevOps & Cloud</h5>
+                            <p>+500 freelances</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -220,12 +249,43 @@
         <div class="container">
 
             <h2>Ce que disent nos clients</h2>
+            
+            <div class="row">
 
-            <img src="homme1.avif" alt="avatar">
-            <h5>Ibrahima Mbaye</h5>
-            <p class="text-muted">Freelance Développeur</p>
-            <p>AfriTalent m'a permis de trouver des missions rapidement et facilement.</p>
+            <!-- 1 -->
+                <div class="col-md-3">
+                    <img src="homme1.avif" alt="avatar">
+                    <h5>Ibrahima Mbaye</h5>
+                    <p class="text-muted">Freelance Développeur</p>
+                    <p>AfriTalent m'a permis de trouver des missions rapidement et facilement.</p>
+                </div>
 
+                
+            <!-- 2 -->
+                <div class="col-md-3">
+                    <img src="images/fatim.jpg" alt="avatar">
+                    <h5>Fatima Konaté</h5>
+                    <p class="text-muted">Entreprise - Startup</p>
+                    <p>Nous avons recruté plusieurs freelances qualifiés grâce à la plateforme.</p>
+                </div>
+
+                    
+             <!-- 3 -->
+                <div class="col-md-3">
+                    <img src="images/fdesigner.jpg" alt="avatar">
+                    <h5>Babacar Faye</h5>
+                    <p class="text-muted">Freelance Designer</p>
+                    <p>Une plateforme simple et efficace pour développer mon activité.</p>
+                </div>
+
+            <!-- 4 -->
+                <div class="col-md-3">
+                    <img src="images/fatou.jpg" alt="avatar">
+                    <h5>Fatou Ndiaye</h5>
+                    <p class="text-muted">Designer UI/UX</p>
+                    <p>Une plateforme simple et efficace pour travailler avec des entreprises.</p>
+                </div>
+            </div>
         </div>      
     </section>
 
@@ -236,14 +296,14 @@
 
 
 
-    <section>
+    <section class="bg-primary text-white text-center py-5">
 
           <!-- CONTENU -->
             <div class="container">
 
-                <h2>Rejoignez AfriTalent dès aujourd'hui</h2>
+                <h2 class="fw-bold mb-3">Rejoignez AfriTalent dès aujourd'hui</h2>
 
-                <a href="freelances.html" class="btn">S'inscrire maintenant</a>
+                <a href="freelances.html" class="btn fw-bold">S'inscrire maintenant</a>
                 
             </div>
         </section>
@@ -254,12 +314,67 @@
 
 
     <!-- FOOTER -->
-    <footer>
-         <!-- Copyright -->
-        <div>
-            <p>&copy; 2026 AfriTalent. Tous droits reserves.</p>
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- AfriTalent -->
+                 <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold text-warning">AfriTalent</h5>
+                    <p>
+                        plateforme dédiée à la mise en relation entre freelances africains
+                        et entreprises du monde entier.
+                    </p>
+                </div>
+
+                <!-- LIENS UTILES -->
+                 <div class="col-md-3 mb-4">
+                    <h5>Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                         <li><a href="freelances.html" class="text-white text-decoration-none">Freelance</a></li>
+                          <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
+                           <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- RESSOURCES -->
+                 <div class="col-md-3 mb-4">
+                    <h5>Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                         <li><a href="#" class="text-white text-decoration-none">Aide</a></li>
+                          <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                           <li><a href="#" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                 <div class="col-md-3 mb-4">
+                    <h5>Contact</h5>
+                    <p>Email : contact@africatalent.com</p>
+                    <p>Téléphone : +221 77 123 45 67</p>
+
+                    <!-- Réseaux sociaux -->
+                     <div class="d-flex gap-3">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-instagram"></i>
+                     </div>
+                 </div>
+            </div>
+
+            <!-- Ligne de séparation -->
+             <hr class="bg-light">
+
+             <!-- Copyright -->
+              <div class="text-center">
+                <p class="mb-0">&copy; 2026 AfriTalent. Tous droits reserves.</p>
+            </div>
         </div>
-    </footer>
+</footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
     </script>
