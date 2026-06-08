@@ -15,11 +15,12 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
 
             <!-- LOGO -->
-                <a class="navbar-brand" href="#">AfriTalent</a>
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="images/logo.jpeg" alt="LOGO" width="50" height="50" class="me-2"></i>AfriTalent</a>
 
             <!-- BOUTON MOBILE -->
                  <button class="navbar-toggler" type="button">
@@ -117,10 +118,10 @@
 
             <h2>Comment ça marche</h2>
 
-            <div class="row">
+            <div class="bento-grid">
 
                 <!-- ETAPE 1 -->
-                <div class="col-md-3">
+                <div class="bento-card card-large bg-primary">
                     <i class="bi bi-person-plus-fill"></i>
                         <h1 class="">1</h1>
                             <h5>Crée ton profil</h5>
@@ -128,7 +129,7 @@
                 </div>
                          
                 <!-- ETAPE 2 -->
-                <div class="col-md-3">
+                <div class="bento-card bg-primary">
                     <i class="bi bi-search"></i>
                         <h1>2</h1>
                             <h5>Explore les offres</h5>
@@ -136,7 +137,7 @@
                 </div>
 
                 <!-- ETAPE 3 -->
-                <div class="col-md-3">
+                <div class="bento-card bg-primary">
                     <i class="bi bi-send-check-fill"></i>
                         <h1 class="">3</h1>
                             <h5>Postule</h5>
@@ -144,7 +145,7 @@
                 </div>
 
                 <!-- ETAPE 4 -->
-                <div class="col-md-3">
+                <div class="bento-card card-wide bg-primary">
                     <i class="bi bi-briefcase-fill"></i>
                         <h1 class="">4</h1>
                             <h5>Travaille</h5>
@@ -250,41 +251,65 @@
 
             <h2>Ce que disent nos clients</h2>
             
-            <div class="row">
-
-            <!-- 1 -->
-                <div class="col-md-3">
-                    <img src="homme1.avif" alt="avatar">
-                    <h5>Ibrahima Mbaye</h5>
-                    <p class="text-muted">Freelance Développeur</p>
-                    <p>AfriTalent m'a permis de trouver des missions rapidement et facilement.</p>
-                </div>
-
+            <div id="temoignagesCarousel" class="carousel slide" data-bs-ride="carousel">
                 
-            <!-- 2 -->
-                <div class="col-md-3">
-                    <img src="images/fatim.jpg" alt="avatar">
-                    <h5>Fatima Konaté</h5>
-                    <p class="text-muted">Entreprise - Startup</p>
-                    <p>Nous avons recruté plusieurs freelances qualifiés grâce à la plateforme.</p>
-                </div>
+                <!-- CONTENU -->
+                 <div class="carousel-inner">
 
+                    <!-- TEMOIGNAGE 1 -->
+                    <div class="carousel-item active">
+
+                        <div class="text-center">
+                            <img src="homme1.avif" alt="avatar">
+                            <h5>Ibrahima Mbaye</h5>
+                            <p class="text-muted">Freelance Développeur</p>
+                            <p>AfriTalent m'a permis de trouver des missions rapidement et facilement.</p>
+                        </div>
+                    </div>  
+                
+                    <!-- TEMOIGNAGE 2 -->
+                    <div class="carousel-item">
+
+                        <div class="text-center">
+                            <img src="images/fatim.jpg" alt="avatar">
+                            <h5>Fatima Konaté</h5>
+                            <p class="text-muted">Entreprise - Startup</p>
+                            <p>Nous avons recruté plusieurs freelances qualifiés grâce à la plateforme.</p>
+                        </div>
+                    </div>
                     
-             <!-- 3 -->
-                <div class="col-md-3">
-                    <img src="images/fdesigner.jpg" alt="avatar">
-                    <h5>Babacar Faye</h5>
-                    <p class="text-muted">Freelance Designer</p>
-                    <p>Une plateforme simple et efficace pour développer mon activité.</p>
-                </div>
+                    <!-- TEMOIGNAGE 3 -->
+                    <div class="carousel-item">
 
-            <!-- 4 -->
-                <div class="col-md-3">
-                    <img src="images/fatou.jpg" alt="avatar">
-                    <h5>Fatou Ndiaye</h5>
-                    <p class="text-muted">Designer UI/UX</p>
-                    <p>Une plateforme simple et efficace pour travailler avec des entreprises.</p>
-                </div>
+                        <div class="text-center">
+                            <img src="images/fdesigner.jpg" alt="avatar">
+                            <h5>Babacar Faye</h5>
+                            <p class="text-muted">Freelance Designer</p>
+                            <p>Une plateforme simple et efficace pour développer mon activité.</p>
+                        </div>
+                    </div>
+
+                    <!-- TEMOIGNAGE 4 -->
+                    <div class="carousel-item">
+
+                        <div class="text-center">
+                            <img src="images/fatou.jpg" alt="avatar">
+                            <h5>Fatou Ndiaye</h5>
+                            <p class="text-muted">Designer UI/UX</p>
+                            <p>Une plateforme simple et efficace pour travailler avec des entreprises.</p>
+                        </div>
+                    </div> 
+                </div>  
+                
+                <!-- BOUTON PRECEDENT -->
+                 <button class="carousel-control-prev" type="button" data-bs-target="#temoignagesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                 </button>
+
+                 <!-- BOUTON SUIVANT -->
+                  <button class="carousel-control-next" type="button" data-bs-target="#temoignagesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
             </div>
         </div>      
     </section>
