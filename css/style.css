@@ -319,4 +319,40 @@ main section:first-child img {
     margin-bottom: 15px;
 }
 
+/* TABLETTE */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    .btn {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .d-flex {
+        flex-wrap: wrap;
+    }
+}
+
+main section:first-child .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 
