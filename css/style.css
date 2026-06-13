@@ -388,3 +388,15 @@ main section:first-child .btn {
     display: none;
     z-index: 999px;
 }
+
+/* ANIMATION FADE-IN */
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}

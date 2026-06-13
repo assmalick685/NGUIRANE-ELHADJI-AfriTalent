@@ -46,3 +46,53 @@ backToTop.addEventListener("click", function() {
         behavior: "smooth"
     });
 });
+
+// COMPTEURS ANIMES
+const counters = document.querySelectorAll(".counter");
+const counterObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = Number(counter.dataset.target);
+
+            let value = 0;
+
+            const Interval = setInterval(function () {
+
+                value += Math.ceil(target / 100);
+
+                if (value >= target) {
+                    value = target;
+                    clearInterval(Interval);
+                }
+
+                counter.textContent = value.toLocaleString();
+
+            },20);
+
+            counterObserver.unobserve(counter);
+        }
+    });
+});
+
+counters.forEach(function (counter) {
+    counterObserver.observe(counter);
+});
+
+// FADE-IN DES SECTIONS
+const sections = document.querySelectorAll(".fade-section");
+const sectionObserver = new IntersectionObserver(function (entries) {
+
+    entries.forEach(function (entry) {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+sections.forEach(function (section) {
+    sectionObserver.observe(section);
+});
+
