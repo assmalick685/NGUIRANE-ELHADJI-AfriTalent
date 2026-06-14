@@ -96,3 +96,95 @@ sections.forEach(function (section) {
     sectionObserver.observe(section);
 });
 
+// FILTRAGE DES FREELANCES
+const categorie = document.getElementById("categorie");
+
+if (categorie) {
+
+    const cartes = document.querySelectorAll(".card[data-categorie]");
+
+    categorie.addEventListener("change", function () {
+
+        const choix = categorie.value;
+
+        cartes.forEach(function (carte) {
+
+            if (choix === "toutes" || carte.dataset.categorie === choix) {
+                carte.style.display = "block";
+            } else {
+                carte.style.display = "none";
+            }
+        });
+    });
+}
+
+// VALIDATION FORMULAIRE
+const form = document.getElementById("contactForm");
+
+if (form) {
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const nom = document.getElementById("nom");
+        const prenom = document.getElementById("prenom");
+        const email = document.getElementById("email");
+        const sujet = document.getElementById("sujet");
+        const message = document.getElementById("message");
+
+        let valide = true;
+
+        function erreur(champ, texte) {
+            champ.nextElementSibling.textContent = texte;
+            champ.nextElementSibling.style.color = "red";
+            valide = false;
+        }
+
+        function effacer(champ) {
+            champ.nextElementSibling.textContent = "";
+        }
+
+        effacer(nom);
+        effacer(prenom);
+        effacer(email);
+        effacer(sujet);
+        effacer(message);
+
+        if (nom.value.trim() === "") {
+            erreur(nom, "Le nom est obligatoire.");
+        }
+
+        if (prenom.value.trim() === "") {
+            erreur(prenom, "Le prénom est obligatoire.");
+        }
+
+        const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (!regex.test(email.value.trim())) {
+            erreur(email, "Adresse e-mail invalide.");
+        }
+
+        if (sujet.value === "") {
+            erreur(sujet, "Veuillez saisir un sujet.");
+        }
+
+        if (message.value.trim().length < 20) {
+            erreur(message, "Le message doit contenir au moins 20 caractères.");
+        }
+
+        const success = document.getElementById("successMessage");
+
+        if (valide) {
+
+            success.textContent = "Message envoyé avec succès !";
+            success.style.color = "green";
+
+            form.reset();
+
+        } else {
+
+            success.textContent = "";
+        }
+    });
+}

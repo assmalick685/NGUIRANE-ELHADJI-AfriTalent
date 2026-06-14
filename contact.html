@@ -65,7 +65,7 @@
                     <!-- FORMULAIRE -->
                      <div class="col-md-6">
 
-                        <form action="">
+                        <form id="contactForm">
 
                             <!-- NOM -->
                             <div>
@@ -92,11 +92,11 @@
                               <div>
                                 <label for="sujet">Sujet</label>
 
-                                <select name="" id="sujet">
+                                <select id="sujet">
                                     <option value="">Choisir un sujet</option>
-                                    <option value="">Support</option>
-                                    <option value="">Recrutement</option>
-                                    <option value="">Partenariat</option>
+                                    <option value="Support">Support</option>
+                                    <option value="Recrutement">Recrutement</option>
+                                    <option value="Partenariat">Partenariat</option>
                                 </select>
 
                                 <small></small>
@@ -110,6 +110,7 @@
                                </div>
 
                                <!-- BUTTON -->
+                                <p id="successMessage"></p>
                                 <button type="submit" class="btn">Envoyer</button>
                         </form>
                      </div>
