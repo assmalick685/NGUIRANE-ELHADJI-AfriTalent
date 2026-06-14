@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent — freelances</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet">
-     <link 
-    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-      <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AfriTalent — freelances</title>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
 
-            <!-- LOGO -->
-                <a class="navbar-brand fw-bold" href="#">
-                    <img src="images/logo.jpeg" alt="LOGO" width="40" height="40" class="me-2"></i>AfriTalent</a>
+                    <!-- LOGO -->
+                    <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/logo.jpeg" alt="Logo AfriTalent" width="40" height="40" class="me-2">AfriTalent</a>
 
-            <!-- BOUTON MOBILE -->
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAfriTalent">
-                    <span class="navbar-toggler-icon"></span>
-                 </button>
+                    <!-- BOUTON MOBILE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAfriTalent" 
+                        aria-controls="navbarAfriTalent" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <!-- MENU -->
-                 <div class="collapse navbar-collapse" id="navbarAfriTalent">
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="navbarAfriTalent">
 
-                <!-- LIENS -->
-                     <ul class="navbar-nav mx-auto">
-                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
+                        <!-- LIENS -->
+                        <ul class="navbar-nav mx-auto">
+                           <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                           <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                           <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
 
-                <!-- BOUTON CTA -->
-                     <a href="#" class="btn">Rejoindre AfriTalent</a>
-                     <button id="theme-toggle" class="btn ms-2">
-                        <i class="bi bi-moon-fill"></i>
-                     </button>
-                 </div>
-            </div>
-        </nav>
-    </header>
+                        <!-- BOUTON CTA -->
+                        <a href="contact.html" class="btn">Rejoindre AfriTalent</a>
+                        <button id="theme-toggle" class="btn ms-2"> <i class="bi bi-moon-fill"></i> </button>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
     <main>
 
         <!-- FILTRES -->
-         <section>
+        <section>
             <div class="container">
 
-                <h2>Catalogue de freelances</h2>
+                <h1>Catalogue de freelances</h1>
 
                 <label for="categorie">Filtre par catégorie :</label>
-                <select name="" id="categorie">
+                <select id="categorie">
                     <option value="toutes">Toutes</option>
                     <option value="developpement">Développement Web</option>
                     <option value="design">Design</option>
@@ -63,188 +62,186 @@
                 </select>
 
             </div>
-         </section>
+        </section>
 
          <!-- PROFILS -->
-          <section>
+        <section>
             <div class="container">
 
                 <div class="row">
 
-                    <!-- 1 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
-                        <img src="image1.jpg" alt="avatar">
-                        <h5>Jean Pierre Kenedy</h5>
+                    <!-- PROFIL 1 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
+                        <img src="image1.jpg" alt="Developpeur web">
+                        <h2>Jean Pierre Kenedy</h2>
                         <p>Développeur Web</p>
                         <p>Creéation de sites web modernes.</p>
                         <p>20£/h</p>
                         <p>★★★★★</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 2 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="design">
-                        <img src="image2.jpg" alt="avatar">
-                        <h5>Ndaye Fatou Fall</h5>
+                     <!-- PROFIL 2 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="design">
+                        <img src="image2.jpg" alt="Designer UI/UX">
+                        <h2>Ndaye Fatou Fall</h2>
                         <p>Designer UI/UX</p>
                         <p>Design d'interfaces intuitives.</p>
                         <p>18£/h</p>
                         <p>★★★★☆</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 3 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="marketing">
-                        <img src="image3.jpg" alt="avatar">
-                        <h5>Moustapha Sow</h5>
+                    <!-- PROFIL 3 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="marketing">
+                        <img src="image3.jpg" alt="Marketing Digital">
+                        <h2>Moustapha Sow</h2>
                         <p>Marketing Digital</p>
                         <p>Gestion des réseaux sociaux.</p>
                         <p>15£/h</p>
                         <p>★★★★☆</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 4 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
-                        <img src="image4.avif" alt="avatar">
-                        <h5>Cheikh Tidiane Guèye</h5>
+                     <!-- PROFIL 4 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
+                        <img src="image4.avif" alt="Developpeur web">
+                        <h2>Cheikh Tidiane Guèye</h2>
                         <p>Développeur Web</p>
                         <p>Applications Web performantes.</p>
                         <p>22£/h</p>
                         <p>★★★★★</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 5 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="design">
-                        <img src="image5.avif" alt="avatar">
-                        <h5>Jessica Gradel</h5>
+                    <!-- PROFIL 5 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="design">
+                        <img src="image5.avif" alt="Designer Graphique">
+                        <h2>Jessica Gradel</h2>
                         <p>Designer Graphique</p>
                         <p>Creéation de logos.</p>
                         <p>17£/h</p>
                         <p>★★★★☆</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 6 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="marketing">
-                        <img src="image5.jpg" alt="avatar">
-                        <h5>Mbayang Sylla</h5>
+                    <!-- 6 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="marketing">
+                        <img src="image5.jpg" alt="SEO Experte">
+                        <h2>Mbayang Sylla</h2>
                         <p>SEO Experte</p>
                         <p>Optimisation référencement.</p>
                         <p>20£/h</p>
                         <p>★★★★☆</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 7 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
-                        <img src="image6.jpg" alt="avatar">
-                        <h5>Ababacar Sadikh Diop</h5>
+                    <!-- PROFIL 7 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
+                        <img src="image6.jpg" alt="Data Analyst">
+                        <h2>Ababacar Sadikh Diop</h2>
                         <p>Data Analyst</p>
                         <p>Analyse de données.</p>
                         <p>25£/h</p>
                         <p>★★★★★</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 8 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
-                        <img src="image7.jpg" alt="avatar">
-                        <h5>Cheikhouna Ndiaye</h5>
+                     <!-- PROFIL 8 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="developpement">
+                        <img src="image7.jpg" alt="DevOps">
+                        <h2>Cheikhouna Ndiaye</h2>
                         <p>DevOps</p>
                         <p>Gestion des serveurs.</p>
                         <p>28£/h</p>
                         <p>★★★★★</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     <!-- 9 -->
-                     <div class="col-md-6 col-lg-4 card" data-categorie="marketing">
-                        <img src="image8.avif" alt="avatar">
-                        <h5>Ramatoulaye Sy</h5>
+                    <!-- PROFIL 9 -->
+                    <div class="col-md-6 col-lg-4 card" data-categorie="marketing">
+                        <img src="image8.avif" alt="Rédactrice web">
+                        <h2>Ramatoulaye Sy</h2>
                         <p>Rédactrice Web</p>
                         <p>Rédaction d'articles.</p>
                         <p>15£/h</p>
                         <p>★★★★☆</p>
                         <p class="text-center"><a href="#">Voir le profil</a></p>
-                     </div>
+                    </div>
 
-                     
                 </div>
             </div>
-          </section>
+        </section>
     </main>
     
-    <footer class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
+        <footer class="bg-dark text-white pt-5 pb-3">
 
-            <div class="row">
+            <div class="container">
 
-                <!-- AfriTalent -->
-                 <div class="col-md-3 mb-4">
-                    <h5 class="fw-bold text-warning">AfriTalent</h5>
-                    <p>
-                        plateforme dédiée à la mise en relation entre freelances africains
-                        et entreprises du monde entier.
-                    </p>
-                </div>
+                <div class="row">
 
-                <!-- LIENS UTILES -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Liens utiles</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                         <li><a href="freelances.html" class="text-white text-decoration-none">Freelance</a></li>
-                          <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
-                           <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
+                    <!-- AfriTalent -->
+                    <div class="col-md-3 mb-4">
+                        <h3 class="fw-bold text-warning">AfriTalent</h3>
+                        <p>
+                           plateforme dédiée à la mise en relation entre freelances africains
+                            et entreprises du monde entier.
+                        </p>
+                    </div>
 
-                <!-- RESSOURCES -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Ressources</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
-                         <li><a href="#" class="text-white text-decoration-none">Aide</a></li>
-                          <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <!-- LIENS UTILES -->
+                        <div class="col-md-3 mb-4">
+                        <h3>Liens utiles</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                            <li><a href="freelances.html" class="text-white text-decoration-none">Freelance</a></li>
+                            <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
+                            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- RESSOURCES -->
+                    <div class="col-md-3 mb-4">
+                        <h3>Ressources</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Aide</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
                            <li><a href="#" class="text-white text-decoration-none">Support</a></li>
-                    </ul>
+                        </ul>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div class="col-md-3 mb-4">
+                       <h3>Contact</h3>
+                       <p>Email : contact@africatalent.com</p>
+                       <p>Téléphone : +221 77 123 45 67</p>
+
+                        <!-- Réseaux sociaux -->
+                        <div class="d-flex gap-3">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- CONTACT -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Contact</h5>
-                    <p>Email : contact@africatalent.com</p>
-                    <p>Téléphone : +221 77 123 45 67</p>
+                <!-- Ligne de séparation -->
+                <hr class="bg-light">
 
-                    <!-- Réseaux sociaux -->
-                     <div class="d-flex gap-3">
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-twitter"></i>
-                        <i class="bi bi-linkedin"></i>
-                        <i class="bi bi-instagram"></i>
-                     </div>
-                 </div>
+                <!-- Copyright -->
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2026 AfriTalent. Tous droits reserves.</p>
+                </div>
             </div>
+        </footer>
 
-            <!-- Ligne de séparation -->
-             <hr class="bg-light">
+        <!-- BOUTON RETOUT EN HAUT -->
+        <button id="backToTop" class="btn"> <i class="bi bi-arrow-up"></i> </button>
 
-             <!-- Copyright -->
-              <div class="text-center">
-                <p class="mb-0">&copy; 2026 AfriTalent. Tous droits reserves.</p>
-            </div>
-        </div>
-</footer>
-
- <button id="backToTop" class="btn">
-    <i class="bi bi-arrow-up"></i>
-   </button>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
-    <script src="js/main.js"></script>
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>

@@ -146,7 +146,7 @@ main section:first-child img {
 }
 
 /* TEMOIGNAGES (CAROUSEL)*/
-section img[alt="avatar"] {
+section img {
     height: 200px;
     border-radius: 10px;
     margin: 20px auto;

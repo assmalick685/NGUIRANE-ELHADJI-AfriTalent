@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent — tarifs</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet">
-    <link
-      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-     <header>
-        <nav class="navbar navbar-expand-lg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AfriTalent — tarifs</title>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
             <div class="container">
 
-            <!-- LOGO -->
-                <a class="navbar-brand fw-bold" href="#">
-                    <img src="images/logo.jpeg" alt="LOGO" width="40" height="40" class="me-2"></i>AfriTalent</a>
+                <!-- LOGO -->
+                <a class="navbar-brand fw-bold" href="index.html">
+                <img src="images/logo.jpeg" alt="Logo AfriTalent" width="40" height="40" class="me-2">AfriTalent</a>
 
-            <!-- BOUTON MOBILE -->
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAfriTalent">
+                <!-- BOUTON MOBILE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAfriTalent" 
+                        aria-controls="navbarAfriTalent" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
                     <span class="navbar-toggler-icon"></span>
-                 </button>
+                </button>
 
-            <!-- MENU -->
-                 <div class="collapse navbar-collapse" id="navbarAfriTalent">
+                <!-- MENU -->
+                <div class="collapse navbar-collapse" id="navbarAfriTalent">
 
                 <!-- LIENS -->
-                     <ul class="navbar-nav mx-auto">
-                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -38,10 +38,10 @@
                     </ul>
 
                 <!-- BOUTON CTA -->
-                     <a href="#" class="btn">Rejoindre AfriTalent</a>
-                     <button id="theme-toggle" class="btn ms-2">
+                    <a href="tarifs.html" class="btn">Rejoindre AfriTalent</a>
+                    <button id="theme-toggle" class="btn ms-2" data-bs-toggle="collapse">
                         <i class="bi bi-moon-fill"></i>
-                     </button>
+                    </button>
                  </div>
             </div>
         </nav>
@@ -49,7 +49,7 @@
     <main>
 
         <!-- PlANS TARIFAIRES -->
-         <section>
+        <section>
             <div class="container">
 
                 <h1 class="text-center mb-5">Nos plans tarifaires</h1>
@@ -57,7 +57,7 @@
                 <div class="row">
 
                     <!-- GRATUIT -->
-                     <div class="col-md-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card">
                             <div class="card-body">
 
@@ -116,94 +116,93 @@
             </div>
          </section>
 
+        <!-- FAQ -->
+        <section>
+            <div class="container">
 
+                <h2>Questuions fréquentes</h2>
 
-         <!-- FAQ -->
-         <section>
-                <div class="container">
+                <div class="accordion">
 
-                    <h2>Questuions fréquentes</h2>
-
-                    <div class="accordion">
-
-                        <!-- QUESTION 1 -->
-                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button">
-                                    Comment créer un compte ?
-                                </button>
-                            </h2>
+                    <!-- QUESTION 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse">
+                                Comment créer un compte ?
+                            </button>
+                        </h2>
                             
-                            <div class="accordion-collapse">
-                                <div class="accordion-body">
+                        <div class="accordion-collapse">
+                            <div class="accordion-body">
                                     Inscrivez-vous avec votre E-mail et complétez votre profil
-                                </div>
                             </div>
-                         </div>
-
-                     <!-- QUESTION 2 -->
-                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button">
-                                    Le plan gratuit est-il limité ?
-                                </button>
-                            </h2>
-                            
-                            <div class="accordion-collapse">
-                                <div class="accordion-body">
-                                    Oui, certaines fonctionnalités sont réservées aux abonnés Pro.
-                                </div>
-                            </div>
-                         </div>
-                         
-                         <!-- QUESTION 3 -->
-                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button">
-                                    Comment contacter un freelance ?
-                                </button>
-                            </h2>
-                            
-                            <div class="accordion-collapse">
-                                <div class="accordion-body">
-                                    Vous pouvez envoyer un message directement depuis profil.
-                                </div>
-                            </div>
-                         </div>
-
-                         <!-- QUESTION 4 -->
-                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button">
-                                    Puis-je changer de plan ?
-                                </button>
-                            </h2>
-                            
-                            <div class="accordion-collapse">
-                                <div class="accordion-body">
-                                    Oui, vous pouvez modifier votre abonnement à tout moment.
-                                </div>
-                            </div>
-                         </div>
-
-                         <!-- QUESTION 5 -->
-                         <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button">
-                                    Les paiements sont-ils sécurisés ?
-                                </button>
-                            </h2>
-                            
-                            <div class="accordion-collapse">
-                                <div class="accordion-body">
-                                    Oui, toutes les transactions sont sécurisées sur la plateforme.
-                                </div>
-                            </div>
-                         </div>
+                        </div>
 
                     </div>
+
+                     <!-- QUESTION 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse">
+                                Le plan gratuit est-il limité ?
+                            </button>
+                        </h2>
+                            
+                        <div class="accordion-collapse">
+                            <div class="accordion-body">
+                                Oui, certaines fonctionnalités sont réservées aux abonnés Pro.
+                            </div>
+                        </div>
+                    </div>
+                         
+                         <!-- QUESTION 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse">
+                                Comment contacter un freelance ?
+                            </button>
+                        </h2>
+                            
+                        <div class="accordion-collapse">
+                            <div class="accordion-body">
+                                Vous pouvez envoyer un message directement depuis profil.
+                            </div>
+                        </div>
+                    </div>
+
+                         <!-- QUESTION 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse">
+                                Puis-je changer de plan ?
+                            </button>
+                        </h2>
+                            
+                        <div class="accordion-collapse">
+                            <div class="accordion-body">
+                                Oui, vous pouvez modifier votre abonnement à tout moment.
+                            </div>
+                        </div>
+                    </div>
+
+                         <!-- QUESTION 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse">
+                                Les paiements sont-ils sécurisés ?
+                            </button>
+                        </h2>
+                            
+                        <div class="accordion-collapse">
+                            <div class="accordion-body">
+                                Oui, toutes les transactions sont sécurisées sur la plateforme.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-         </section>
+            </div>
+        </section>
     </main>
     
     <footer class="bg-dark text-white pt-5 pb-3">
@@ -212,8 +211,8 @@
             <div class="row">
 
                 <!-- AfriTalent -->
-                 <div class="col-md-3 mb-4">
-                    <h5 class="fw-bold text-warning">AfriTalent</h5>
+                <div class="col-md-3 mb-4">
+                    <h3 class="fw-bold text-warning">AfriTalent</h3>
                     <p>
                         plateforme dédiée à la mise en relation entre freelances africains
                         et entreprises du monde entier.
@@ -221,59 +220,57 @@
                 </div>
 
                 <!-- LIENS UTILES -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Liens utiles</h5>
+                <div class="col-md-3 mb-4">
+                    <h3>Liens utiles</h3>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                         <li><a href="freelances.html" class="text-white text-decoration-none">Freelance</a></li>
-                          <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
-                           <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="freelances.html" class="text-white text-decoration-none">Freelance</a></li>
+                        <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
 
                 <!-- RESSOURCES -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Ressources</h5>
+                <div class="col-md-3 mb-4">
+                    <h3>Ressources</h3>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
-                         <li><a href="#" class="text-white text-decoration-none">Aide</a></li>
-                          <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
-                           <li><a href="#" class="text-white text-decoration-none">Support</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Aide</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Support</a></li>
                     </ul>
                 </div>
 
                 <!-- CONTACT -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Contact</h5>
+                <div class="col-md-3 mb-4">
+                    <h3>Contact</h3>
                     <p>Email : contact@africatalent.com</p>
                     <p>Téléphone : +221 77 123 45 67</p>
 
                     <!-- Réseaux sociaux -->
-                     <div class="d-flex gap-3">
+                    <div class="d-flex gap-3">
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-twitter"></i>
                         <i class="bi bi-linkedin"></i>
                         <i class="bi bi-instagram"></i>
-                     </div>
-                 </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Ligne de séparation -->
-             <hr class="bg-light">
+            <hr class="bg-light">
 
-             <!-- Copyright -->
-              <div class="text-center">
+            <!-- Copyright -->
+            <div class="text-center">
                 <p class="mb-0">&copy; 2026 AfriTalent. Tous droits reserves.</p>
             </div>
-        </div>
-</footer>
 
- <button id="backToTop" class="btn">
-    <i class="bi bi-arrow-up"></i>
-   </button>
+        </div>
+    </footer>
+    <!-- BOUTON RETOUR EN HAUT -->
+    <button id="backToTop" class="btn" data-bs-toggle="collapse"> <i class="bi bi-arrow-up"></i> </button>
    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    
     <script src="js/main.js"></script>
 </body>

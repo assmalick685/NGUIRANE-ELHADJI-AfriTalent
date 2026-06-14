@@ -1,98 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent — contact</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet">
-    <link
-      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AfriTalent — contact</title>
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
 
-            <!-- LOGO -->
-                <a class="navbar-brand fw-bold" href="#">
-                    <img src="images/logo.jpeg" alt="LOGO" width="40" height="40" class="me-2"></i>AfriTalent</a>
+                    <!-- LOGO -->
+                    <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/logo.jpeg" alt="Logo AfriTalent" width="40" height="40" class="me-2">AfriTalent</a>
 
-            <!-- BOUTON MOBILE -->
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAfriTalent">
-                    <span class="navbar-toggler-icon"></span>
-                 </button>
+                    <!-- BOUTON MOBILE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAfriTalent" 
+                        aria-controls="navbarAfriTalent" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <!-- MENU -->
-                 <div class="collapse navbar-collapse" id="navbarAfriTalent">
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse" id="navbarAfriTalent">
 
-                <!-- LIENS -->
-                     <ul class="navbar-nav mx-auto">
-                         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
+                        <!-- LIENS -->
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
 
-                <!-- BOUTON CTA -->
-                     <a href="#" class="btn">Rejoindre AfriTalent</a>
-                     <button id="theme-toggle" class="btn ms-2">
-                        <i class="bi bi-moon-fill"></i>
-                     </button>
-                 </div>
-            </div>
-        </nav>
-    </header>
+                        <!-- BOUTON CTA -->
+                        <a href="about.html" class="btn">Rejoindre AfriTalent</a>
+                        <button id="theme-toggle" class="btn ms-2">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-
-
-
-
-
-    <main>
+        <main>
 
         <!-- CONTACT -->
         <section>
             <div class="container">
 
-                <h2>Contacter-nous</h2>
+                <h1>Contactez-nous</h1>
 
                 <div class="row">
 
                     <!-- FORMULAIRE -->
-                     <div class="col-md-6">
+                    <div class="col-md-6">
 
                         <form id="contactForm">
 
                             <!-- NOM -->
                             <div>
                                 <label for="nom">Nom</label>
-                                <input type="text" id="nom">
+                                <input type="text" id="nom" name="nom">
                                 <small></small>
                             </div>
 
                              <!-- PRENOM -->
                             <div>
                                 <label for="prenom">Prénom</label>
-                                <input type="text" id="prenom">
+                                <input type="text" id="prenom" name="prenom">
                                 <small></small>
                             </div>
 
                             <!-- EMAIL -->
-                              <div>
+                            <div>
                                 <label for="email">E-mail</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" name="email">
                                 <small></small>
-                             </div>
+                            </div>
 
                              <!-- SUJET -->
-                              <div>
+                            <div>
                                 <label for="sujet">Sujet</label>
 
-                                <select id="sujet">
+                                <select id="sujet" name="sujet">
                                     <option value="">Choisir un sujet</option>
                                     <option value="Support">Support</option>
                                     <option value="Recrutement">Recrutement</option>
@@ -100,20 +95,20 @@
                                 </select>
 
                                 <small></small>
-                              </div>
+                            </div>
 
                               <!-- MESSAGE -->
-                               <div>
+                            <div>
                                     <label for="message">Message</label>
-                                    <textarea name="" id="message" rows="5"></textarea>
+                                    <textarea name="message" id="message" rows="5"></textarea>
                                     <small></small>
-                               </div>
+                            </div>
 
                                <!-- BUTTON -->
                                 <p id="successMessage"></p>
                                 <button type="submit" class="btn">Envoyer</button>
                         </form>
-                     </div>
+                    </div>
 
                      <!-- INFOS -->
                     <div class="col-md-6 text-center">
@@ -132,13 +127,15 @@
         </section>
 
         <!-- GOOGLE MAPS -->
-         <div class="container">
+         <section>
+            <div class="container">
 
-            <h2>Notre localisation</h2>
+                <h2>Notre localisation</h2>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.7703187105767!2d-17.434579025865975!3d14.668971885825513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173d47e376b4f%3A0x6db502bc314536e3!2sPlace%20de%20l&#39;Ind%C3%A9pendance!5e0!3m2!1sfr!2ssn!4v1778301648083!5m2!1sfr!2ssn"
-             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
+                <iframe title="localisation AfriTalent" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.7703187105767!2d-17.434579025865975!3d14.668971885825513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173d47e376b4f%3A0x6db502bc314536e3!2sPlace%20de%20l&#39;Ind%C3%A9pendance!5e0!3m2!1sfr!2ssn!4v1778301648083!5m2!1sfr!2ssn"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
      
     <footer class="bg-dark text-white pt-5 pb-3">
@@ -147,8 +144,8 @@
             <div class="row">
 
                 <!-- AfriTalent -->
-                 <div class="col-md-3 mb-4">
-                    <h5 class="fw-bold text-warning">AfriTalent</h5>
+                <div class="col-md-3 mb-4">
+                    <h3 class="fw-bold text-warning">AfriTalent</h3>
                     <p>
                         plateforme dédiée à la mise en relation entre freelances africains
                         et entreprises du monde entier.
@@ -156,59 +153,58 @@
                 </div>
 
                 <!-- LIENS UTILES -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Liens utiles</h5>
+                <div class="col-md-3 mb-4">
+                    <h3>Liens utiles</h3>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
-                         <li><a href="freelances.html" class="text-white text-decoration-none">Freelance</a></li>
-                          <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
-                           <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="freelances.html" class="text-white text-decoration-none">Freelance</a></li>
+                        <li><a href="tarifs.html" class="text-white text-decoration-none">Tarifs</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
 
                 <!-- RESSOURCES -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Ressources</h5>
+                <div class="col-md-3 mb-4">
+                    <h3>Ressources</h3>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
-                         <li><a href="#" class="text-white text-decoration-none">Aide</a></li>
-                          <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
-                           <li><a href="#" class="text-white text-decoration-none">Support</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Aide</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Support</a></li>
                     </ul>
                 </div>
 
                 <!-- CONTACT -->
-                 <div class="col-md-3 mb-4">
-                    <h5>Contact</h5>
+                <div class="col-md-3 mb-4">
+                    <h3>Contact</h3>
                     <p>Email : contact@africatalent.com</p>
                     <p>Téléphone : +221 77 123 45 67</p>
 
                     <!-- Réseaux sociaux -->
-                     <div class="d-flex gap-3">
+                    <div class="d-flex gap-3">
                         <i class="bi bi-facebook"></i>
                         <i class="bi bi-twitter"></i>
                         <i class="bi bi-linkedin"></i>
                         <i class="bi bi-instagram"></i>
-                     </div>
-                 </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Ligne de séparation -->
-             <hr class="bg-light">
+            <hr class="bg-light">
 
-             <!-- Copyright -->
-              <div class="text-center">
+            <!-- Copyright -->
+            <div class="text-center">
                 <p class="mb-0">&copy; 2026 AfriTalent. Tous droits reserves.</p>
             </div>
-        </div>
-</footer>
 
- <button id="backToTop" class="btn">
-    <i class="bi bi-arrow-up"></i>
-   </button>
+        </div>
+    </footer>
+
+    <!-- BOUTON RETOUR EN HAUT -->
+    <button id="backToTop" class="btn"> <i class="bi bi-arrow-up"></i> </button>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script src="js/main.js"></script>
 </body>
