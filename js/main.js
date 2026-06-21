@@ -66,7 +66,7 @@ const counterObserver = new IntersectionObserver(function (entries) {
                     clearInterval(Interval);
                 }
 
-                counter.textContent = value.toLocaleString();
+                counter.textContent = "+" + value.toLocaleString();
 
             },20);
 
